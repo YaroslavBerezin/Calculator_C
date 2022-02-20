@@ -10,7 +10,7 @@
 using namespace std;
 
 
-double calculateNumbersAndReturnAnswer(double number1, double number2, char operation) {
+double calculateNumbers(double number1, double number2, char operation) {
     switch (operation) {
         case '+':
             return number1 + number2;
@@ -45,7 +45,7 @@ int main() {
     double number2 = readDouble(2);
     char operation = readChar();
     
-    cout << "Answer: " << calculateNumbersAndReturnAnswer(number1, number2, operation) << endl;
+    cout << "Answer: " << calculateNumbers(number1, number2, operation) << endl;
     
     return 0;
 }
