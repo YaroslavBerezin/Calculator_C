@@ -26,7 +26,7 @@ double calculateNumbers(double number1, double number2, char operation) {
 }
 
 double readDouble(int serial) {
-    cout << "Input the " << serial << " number (integer): ";
+    cout << "Input the " << serial << " number (double): ";
     double number;
     cin >> number;
     return number;
