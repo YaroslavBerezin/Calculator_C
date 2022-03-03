@@ -33,7 +33,7 @@ double readDouble(int serial) {
 }
 
 char readChar() {
-    cout << "Input a character (+, -, *, /, %): ";
+    cout << "Input a character (+, -, *, /): ";
     char operation;
     cin >> operation;
     return operation;
