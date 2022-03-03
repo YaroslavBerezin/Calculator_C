@@ -19,9 +19,14 @@ double calculateNumbers(double number1, double number2, char operation) {
         case '*':
             return number1 * number2;
         case '/':
+            if (number2 == 0) {
+                cout << "error. You can't devide by zero." << endl;
+                return -1;
+            }
             return number1 / number2;
         default:
-            return 0;
+            cout << "error. You should enter rigth math operation." << endl;
+            return -1;
     }
 }
 
